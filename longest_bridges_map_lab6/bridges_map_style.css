@@ -1,0 +1,8 @@
+#bridge-map {
+    width: 800px;
+    height: 700px;
+    border: 2px darkolivegreen solid
+}
+body {
+    font-family: "Tahoma"
+}
