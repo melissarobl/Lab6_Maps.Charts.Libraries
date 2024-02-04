@@ -62,5 +62,3 @@ long_bridges.forEach(function(long_bridge) {
 //     iconAnchor:   [9, 50], // point of the icon which will correspond to marker's location
 //     popupAnchor:  [-2, -60] // point from which the popup should open relative to the iconAnchor
 // })
-
-
