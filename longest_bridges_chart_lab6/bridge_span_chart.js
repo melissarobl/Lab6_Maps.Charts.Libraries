@@ -13,7 +13,7 @@ let ctx = chartCanvas.getContext('2d')
 
 // create chart object
 let bridgeSpanChart = new Chart(ctx, {
-    type: 'doughnut',
+    type: 'bar',
     data: {
         datasets: [
             {
