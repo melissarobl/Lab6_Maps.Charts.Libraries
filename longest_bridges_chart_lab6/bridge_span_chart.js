@@ -6,25 +6,28 @@ long_bridges =  [
     {"name": "Tacoma Narrows Bridge", "location": "Tacoma and Kitsap, WA", "span": 853.44, "coordinates": [47.2690, -122.5517] }
 ]
 
-/* Get chart canvas and contex  */
-let chartCanvas = document.querySelector('#bridges-doughnut-chart')
+/* Get chart canvas and context  */
+let chartCanvas = document.querySelector('#bridges-bar-chart')
 let ctx = chartCanvas.getContext('2d')
 
 
 // create chart object
 let bridgeSpanChart = new Chart(ctx, {
     type: 'bar',
-    data: {
-        datasets: [
-            {
-                data: [], //no data entered yet
-                backgroundColor: []
+    data: { //object
+        datasets: [{
+                label: 'bridge span (m) ',  //label for legend
+                data: [],
+                backgroundColor: [],
 
-            }
-        ],
-        labels: []
+            }],
+
     },
-    options: {} //options object. fill thing in here later
+    options: { //options object
+        legend: {
+            position: 'right'
+        }
+    }
 })
 
 
