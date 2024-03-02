@@ -26,6 +26,13 @@ let bridgeSpanChart = new Chart(ctx, {
     options: { //options object
         legend: {
             position: 'right'
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true //if false, Tacoma Narrows Bridge is too small
+                }
+            }]
         }
     }
 })
